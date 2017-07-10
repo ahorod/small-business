@@ -1,0 +1,6 @@
+<%= simple_form_for [@product, @new_review], url: product_reviews_path(@product, @new_review) do |form| %>
+  <p>Author: <%= current_user.user_name %> </p>
+  <%= form.input :author, :as => :hidden, :input_html => {:value => current_user.user_name} %>
+  <%= form.input :content %>
+  <%= form.submit class: 'btn btn-success'%>
+<% end %>

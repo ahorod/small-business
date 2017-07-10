@@ -1,0 +1,8 @@
+
+
+<%= simple_form_for [@product], url: products_path do |form| %>
+  <%= form.input :name %>
+  <%= form.input :description %>
+  <%= form.input :price %>
+  <%= form.button :submit %>
+<% end %>

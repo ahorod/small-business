@@ -1,0 +1,25 @@
+
+<div class="album text-muted">
+  <div class="container">
+    <div class="row">
+      <% if is_admin? %>
+      <div class="btn btn-default">
+        <%= link_to "Add Product", new_product_path %>
+      </div>
+      <% end %>
+      <% @products.each do |product|  %>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <%= link_to product do %>
+              <b><%= product.name %></b>
+            <% end %>
+          </div>
+          <div class="panel-body">
+            <p> <%= product.description %></p>
+            <p> <%= number_to_currency(product.price) %> </p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

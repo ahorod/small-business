@@ -1,0 +1,10 @@
+
+<h1>Edit Product</h1>
+
+<%= simple_form_for [@product], url: product_path do |form| %>
+  <%= form.input :name%>
+  <%= form.input :description%>
+  <%= form.input :price%>
+
+  <%= form.submit class: 'btn btn-success'%>
+<% end %>
