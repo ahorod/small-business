@@ -6,7 +6,10 @@
 
 ## Description
 
-Small business web app that allows user authentication.Admin can add, edit, delete products and delete reviews. **To access admin functionality create user with admin@admin email**
+Small business web app that allows user authentication.Admin can add, edit, delete products and delete reviews.
+
+**To access admin functionality create user with admin@admin email.**
+
 Users can add and delete reviews.
 
 ### Core Functionality
