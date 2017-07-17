@@ -10,7 +10,7 @@ Small business web app that allows user authentication.Admin can add, edit, dele
 
 **To access admin functionality create user with admin@admin email.**
 
-Users can add and delete reviews.
+Users can add reviews.
 
 ### Core Functionality
 *_Authentication_*
